@@ -1,0 +1,8 @@
+{
+  "name": "شركة صفقات كوم - تاجير العمالة",
+  "description": "حلول متكاملة لإمداد وتشغيل الكوادر المهنية والعمالة وتوفير حلول التشغيل والصيانة للمنشآت والمشاريع في المملكة العربية السعودية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
