@@ -20,7 +20,7 @@ import {
 import { AnimatePresence, motion } from 'motion/react';
 
 export const Layout: React.FC = () => {
-  const { t, lang, setLanguage } = useI18n();
+  const { t, lang, setLang } = useI18n();
   const location = useLocation();
   const navigate = useNavigate();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -30,7 +30,7 @@ export const Layout: React.FC = () => {
 
   const toggleLanguage = () => {
     const newLang = lang === 'ar' ? 'en' : 'ar';
-    setLanguage(newLang);
+    setLang(newLang);
     const pathParts = location.pathname.split('/').filter(Boolean);
     if (pathParts.length > 0 && (pathParts[0] === 'ar' || pathParts[0] === 'en')) {
       pathParts[0] = newLang;
